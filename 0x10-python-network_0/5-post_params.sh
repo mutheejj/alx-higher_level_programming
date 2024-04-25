@@ -1,3 +1,3 @@
 #!/bin/bash
-#..
-curl -s -d "email=hrtest.com&subject=I%20will%20always%20be%20here%20for%20PLD" -X POST "$1"
+# This script takes in a URL, sends a POST request to the passed URL, and displays the body of the respons
+curl -s "$1" -X POST -d "email=hr@test.com&subject=I will always be here for PLD"
